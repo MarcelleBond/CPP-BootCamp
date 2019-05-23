@@ -1,7 +1,8 @@
 NAME = LittleBlackBook
 COMP = g++
 FLAGS = -Wall -Werror -Wextra
-FUNCS = phonebook \
+FUNCS = main \
+		phonebook 
 
 SRCC = $(addsuffix .cpp, $(FUNCS))
 SRCO = $(addsuffix .o, $(FUNCS))

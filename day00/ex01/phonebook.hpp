@@ -1,13 +1,13 @@
 #ifndef PHONEBOOK_HPP
 #define PHONEBOOK_HPP
 
-#define getName(var) #var
 #include <iostream>
+#include <iomanip>
+#include <string>
+#include <cstdlib>
 
 class phonebook
 {
-	private:
-		/* data */
 	public:
 		std::string first_name;
 		std::string last_name;
@@ -22,8 +22,10 @@ class phonebook
 		std::string darkest_secret;
 };
 
-std::string caps_string(std::string str);
-phonebook add(/* args */);
-void search();
+std::string	caps_string(std::string str);
+std::string	cut(std::string value);
+phonebook	add();
+void		search(phonebook book[], int index);
+void		display_contact(phonebook book[], int index, int limit);
 
 #endif
