@@ -40,15 +40,15 @@ void search(phonebook book[], int index)
 	std::cout << std::right << std::setw(10) << cut("Index") << "|";
 	std::cout << std::right << std::setw(10) << cut("First name") << "|";
 	std::cout << std::right << std::setw(10) << cut("last name") << "|";
-	std::cout << std::right << std::setw(10) << cut("nickname") << std::endl;
+	std::cout << std::right << std::setw(10) << cut("nickname") << "|" << std::endl;
 	for (int i = 0; i < index; i++)
 	{
 		std::cout << std::right << std::setw(10) << i << "|";
 		std::cout << std::right << std::setw(10) << cut(book[i].first_name) << "|";
 		std::cout << std::right << std::setw(10) << cut(book[i].last_name) << "|";
-		std::cout << std::right << std::setw(10) << cut(book[i].nickname) << std::endl;
+		std::cout << std::right << std::setw(10) << cut(book[i].nickname) << "|" << std::endl;
 	}
-	std::cout << "Please choose the contact you want to view between 0 and " << index - 1 << std::endl ;
+	std::cout << "Please choose the contact you want to view between 0 and " << index - 1 << std::endl;
 	std::getline(std::cin, contact);
 	if (std::isdigit(contact[0]))
 		display_contact(book, std::atoi(contact.c_str()), index);
@@ -58,7 +58,6 @@ void search(phonebook book[], int index)
 
 void display_contact(phonebook book[], int index, int limit)
 {
-	std::cout << index;
 	if (index < limit && index > -1)
 	{
 		std::cout << "First name: " << book[index].first_name << std::endl;
