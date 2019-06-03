@@ -77,5 +77,5 @@ void Account::_TimeStamp()
 {
 	time_t now = std::time(0);
 	tm *ltm = std::localtime(&now);
-	std::cout << "[" << ltm->tm_year + 1900 << (ltm->tm_mon <= 9 ? "0" : "") << ltm->tm_mon + 1 << (ltm->tm_mday <= 9 ? "0" : "")<< ltm->tm_mday << "_" << 1 + ltm->tm_hour << 1 + ltm->tm_min << 1 + ltm->tm_sec << "]";
+	std::cout << "[" << ltm->tm_year + 1900 << (ltm->tm_mon <= 9 ? "0" : "") << ltm->tm_mon + 1 << (ltm->tm_mday <= 9 ? "0" : "") << ltm->tm_mday << "_" << (ltm->tm_hour <= 9 ? "0" : "") << 1 + ltm->tm_hour << (ltm->tm_min <= 9 ? "0" : "") << 1 + ltm->tm_min << (ltm->tm_sec <= 9 ? "0" : "") << 1 + ltm->tm_sec << "]";
 }
