@@ -1,3 +1,8 @@
+#include <iostream>
+#include <iomanip>
+#include <string>
+#include <cstdlib>
+#include <ctime>
 #include "Account.class.hpp"
 
 int Account::_totalAcc = 0;

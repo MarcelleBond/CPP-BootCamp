@@ -6,10 +6,12 @@
 class Pony
 {
 	private:
+		std::string name;
 	public:
-		void ponySays(); 
-		Pony();
-		~Pony();
+		
+		void	ponySays(); 
+				Pony(std::string name);
+				~Pony();
 };
 
 #endif

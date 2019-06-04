@@ -10,9 +10,10 @@ class ZombieEvent
 private:
 	std::string	_type;
 public:
-			ZombieEvent(std::string type);
+			ZombieEvent();
 			~ZombieEvent();
-	Zombie	*newZombie(std::string name);
+	void	setZombieType(std::string type);
+	Zombie* newZombie(std::string name);
 	void	randomChump();
 };
 

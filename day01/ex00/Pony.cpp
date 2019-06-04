@@ -1,8 +1,9 @@
 #include "Pony.hpp"
 
-Pony::Pony()
+Pony::Pony(std::string name)
 {
-	std::cout << "the pony was born" << std::endl;
+	this->name = name;
+	std::cout << "the pony was born and his name was " << name << std::endl;
 }
 
 Pony::~Pony()

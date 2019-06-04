@@ -11,6 +11,10 @@ int main()
 	{
 		std::cout << "Please type in your command, ADD, SEARCH OR EXIT \n";
 		std::getline(std::cin, request);
+		if (std::cin.eof())
+		{
+			return 0;
+		}
 		request = caps_string(request);
 		if (!request.compare("EXIT"))
 			return 0;
