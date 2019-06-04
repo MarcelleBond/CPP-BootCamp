@@ -8,7 +8,7 @@ void ZombieEvent::setZombieType(std::string type)
 
 Zombie	*ZombieEvent::newZombie(std::string name)
 {
-	return new Zombie::Zombie(name, this->_type);
+	return new Zombie(name, this->_type);
 }
 
 void ZombieEvent::randomChump()

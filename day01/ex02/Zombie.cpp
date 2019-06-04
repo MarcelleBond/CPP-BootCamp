@@ -8,5 +8,5 @@ Zombie::Zombie(std::string name, std::string type)
 
 void Zombie::announce()
 {
-	std::cout << "Hi everyone. I'm " << this->_name << " and I'm a " << this->_type << " of zombie";
+	std::cout << "Hi everyone. I'm " << this->_name << " and I'm a " << this->_type << " of zombie" << std::endl;
 }
