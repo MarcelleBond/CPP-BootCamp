@@ -7,5 +7,7 @@ int main()
     Zombie *goodGuy = badGuy->newZombie("pepi");
     goodGuy->announce();
     badGuy->randomChump();
+	delete badGuy;
+	delete goodGuy;
     return 0;
 }

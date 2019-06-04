@@ -7,7 +7,7 @@
 class ZombieHorde
 {
 private:
-	
+	Zombie *zombieArray;
 public:
 			ZombieHorde(int N);
 			~ZombieHorde();
