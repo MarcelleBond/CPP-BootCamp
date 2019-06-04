@@ -4,9 +4,9 @@
 #include <iostream>
 #include <iomanip>
 #include <string>
-#include <cstdlib>
+#include <cstdlib>sda
 
-class phonebook
+class Phonebook
 {
 	private:
 		std::string first_name;
@@ -47,8 +47,8 @@ class phonebook
 
 std::string	caps_string(std::string str);
 std::string	cut(std::string value);
-phonebook	add();
-void		search(phonebook book[], int index);
-void		display_contact(phonebook book[], int index, int limit);
+Phonebook	add();
+void		search(Phonebook book[], int index);
+void		display_contact(Phonebook book[], int index, int limit);
 
 #endif

@@ -1,9 +1,9 @@
-#include "phonebook.hpp"
+#include "Phonebook.hpp"
 
 int main()
 {
 	std::string request;
-	phonebook book[8];
+	Phonebook book[8];
 	int i;
 
 	i = 0;
@@ -27,9 +27,9 @@ int main()
 	return 0;
 }
 
-phonebook add()
+Phonebook add()
 {
-	phonebook contact;
+	Phonebook contact;
 	std::string value;
 	std::cout << "Please enter the contacts first name: ";
 	std::getline(std::cin, value);
@@ -67,7 +67,7 @@ phonebook add()
 	return contact;
 }
 
-void search(phonebook book[], int index)
+void search(Phonebook book[], int index)
 {
 	std::string contact;
 
@@ -95,7 +95,7 @@ void search(phonebook book[], int index)
 		std::cout << "You did not input a number." << std::endl;
 }
 
-void display_contact(phonebook book[], int index, int limit)
+void display_contact(Phonebook book[], int index, int limit)
 {
 	if (index < limit && index > -1)
 	{
