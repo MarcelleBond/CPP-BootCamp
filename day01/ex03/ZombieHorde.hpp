@@ -7,11 +7,11 @@
 class ZombieHorde
 {
 private:
-	Zombie *zombieArray;
+	void	announce(Zombie zombieArray[], int N);
 public:
 			ZombieHorde(int N);
 			~ZombieHorde();
-	void	announce();
+	
 };
 
 #endif

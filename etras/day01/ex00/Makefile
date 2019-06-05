@@ -1,8 +1,7 @@
 NAME = Pony
-COMP = g++
+COMP = clang++
 FLAGS = -Wall -Werror -Wextra
-FUNCS = main \
-		Pony
+FUNCS = 
 		
 
 SRCC = $(addsuffix .cpp, $(FUNCS))
