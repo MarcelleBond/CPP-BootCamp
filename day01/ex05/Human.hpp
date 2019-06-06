@@ -9,7 +9,7 @@ private:
     const Brain *bobby;
 public:
     std::string     identify();
-    Brain           getBrain();
+    const Brain           &getBrain();
                     Human();
                     ~Human();
 };

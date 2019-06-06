@@ -7,9 +7,15 @@ Human::Human()
 
 Human::~Human()
 {
+    delete this->bobby;
 }
 
 std::string Human::identify()
 {
-    
+    return this->bobby->identify();
+}
+
+const Brain   &Human::getBrain()
+{
+    return *bobby;
 }

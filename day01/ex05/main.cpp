@@ -1,5 +1,6 @@
 #include "Human.hpp"
 #include <string>
+#include <iostream>
 
 int main()
 {
