@@ -21,26 +21,26 @@ public:
     void gradeInc(); 
     void gradeDec();
 
-    class GradeTooLowException : std::exception
+    class GradeTooLowException : public std::exception
     {
     public:
         GradeTooLowException();
         GradeTooLowException(const GradeTooLowException &);
         GradeTooLowException &operator=(const GradeTooLowException &);
         ~GradeTooLowException() throw();
-        virtual const char *what() throw();
+        virtual const char *what() const throw();
     
     private:
         
     };
-    class GradeTooHighException : std::exception
+    class GradeTooHighException : public std::exception
     {
     public:
         GradeTooHighException();
         GradeTooHighException(const GradeTooHighException &);
         GradeTooHighException &operator=(const GradeTooHighException &);
         ~GradeTooHighException() throw();
-        virtual const char *what() throw();    
+        virtual const char *what() const throw();    
     private:
         
     };
